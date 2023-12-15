@@ -1,0 +1,120 @@
+@charset "utf-8";
+.section-container{
+    padding-top:140px;
+    padding-bottom: 30px;
+}
+.member-title{
+    text-align: center;
+    width: 200px;
+    margin: 25px auto;
+    font-size: 2rem;
+}
+.member-form{
+    width:90%;
+    max-width: 480px;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+.member-form>div{
+    width: 100%;
+    /* overflow:hidden; */
+    /* border: 1px solid black; */   
+}
+.id, 
+.psw, 
+.name,
+.email,
+.phone{
+    height:50px;
+    display: flex;
+    align-items: center;
+}
+.jender{
+    height:30px;
+    display: flex;
+    align-items: center;
+}
+.text-limit{
+    font-size: 0.9rem;
+    margin-left:5px;
+}
+input{
+    outline: none;
+}
+
+input[name=id-form],
+input[type=password],
+input[name=name]{
+    display: block;
+    width:100%;
+    height: 80%;
+    /* border: 1px solid black; */
+    font-size: 1.1rem;
+}
+input[name=jender]{
+    width:20px;
+    height:20px;
+    appearance: none;
+    border:2px solid rgb(124, 113, 91);
+}
+input[name=jender],
+.jender label{
+    vertical-align: middle;
+    margin-left: 5px;
+}
+input[name=jender]:checked{
+    background:transparent url(../images/icon_input-check.png) no-repeat center;
+    background-size:contain;
+}
+.email{ 
+    justify-content: space-around;
+}
+input[name=e-id],
+input[name=e-add],
+.e-select{
+    width:31%;
+    height: 70%;
+}
+.phone{
+    justify-content: space-around;
+}
+.phone input[type=text]{
+    width: 31%;
+    height: 70%;
+}
+input[type=checkbox]{
+    display: none;
+}
+.chk-ele{
+    margin: 5px 0;
+}
+input[id=chk1]+label,
+input[id=chk2]+label,
+input[id=chk-total]+label{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    border:2px solid rgb(124, 113, 91);
+    vertical-align: middle;
+}
+input[id=chk1]:checked+label,
+input[id=chk2]:checked+label,
+input[id=chk-total]:checked+label{
+    background:transparent url(../images/icon_input-check.png) no-repeat center;
+    background-size:contain;
+}
+.trans{
+    border: 1px solid rgb(105, 96, 77);
+    margin: 25px auto;
+}
+input[type=submit]{
+    width:100%;
+    height:100%;
+    background-color:rgb(124, 113, 91);
+    text-align:center;
+    border:none;
+    font-size:1.3em;
+    color:white;
+    font-weight:bold;
+    padding: 10px;
+}

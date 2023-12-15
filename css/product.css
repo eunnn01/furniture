@@ -1,0 +1,269 @@
+@charset "utf-8";
+section{
+    background-color: rgb(228, 225, 225);
+}
+.section-container{
+    padding-top:140px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.product{
+    width: 100%;
+    /* border: 1px solid black; */
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    padding: 10px;
+}
+.p-img{
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(119, 108, 89);
+    border-radius: 20px;
+}
+.p-info{
+    width: 50%;
+    padding: 15px;
+}
+.p-info h3{
+    font-size: 1.4rem;
+}
+.p-info>p{
+    text-align: right;
+}
+.p-info p{
+    font-size: 1rem;
+}
+.p-info p span{
+    font-size: 1.2rem;
+}
+.size{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    margin: 10px 0;
+}
+.size p,
+.s-size{
+    width: 50%;
+    font-size: 1rem;
+}
+.s-size{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+}
+.count{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+.count p,
+input[name=count]{
+    width: 50%;
+    font-size: 1rem;
+}
+input[name=count]{
+    text-align: center;
+    width: 40%;
+    margin: auto;
+}
+.s-b{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+.s-b button{
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px;
+}
+.pwish{
+    width: 20%;
+    border: 1px solid black;
+}
+.fa-heart.active{
+    color: red;
+}
+.pcart{
+    width: 35%;
+    border: 1px solid black;
+}
+.pbuy{
+    width: 45%;
+    background-color: rgb(104, 89, 62);
+    color: white;
+    border: none;
+    
+}
+.p-img img{
+    width: 100%;
+}
+.product-info-cantainer{
+    width: 100%;
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+.product-info-tab{
+    width: 100%;
+    border: 1px solid rgb(56, 49, 36);
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.info-tab{
+    width: 20%;
+    border-right: 1px solid rgb(56, 49, 36);
+}
+.info-tab-1{
+    width: 40%;
+}
+.info-tab a{
+    padding: 4px;
+    display: block;
+    width: 100%;
+    background-color: rgb(104, 89, 62);
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.info-tab-1 a{
+    padding: 4px;
+    display: block;
+    width: 100%;
+    background-color: rgb(104, 89, 62);
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.product-info-content{
+    width: 100%;
+    background-color: rgb(201, 189, 168);
+    /* border: 1px solid black; */
+}
+.product-box{
+    width: 100%;
+    border-bottom: 4px double black;
+    padding: 0 10px;
+}
+.info-content-first{
+    padding: 20px;
+    font-size: 0.9rem;
+}
+.info-content-first span{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.product-info-img{
+    width: 100%;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+.p-page{
+    width: 100%;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+.p-page img{
+    width: 100%;
+}
+.rqd-wrap{
+    padding: 10px;
+}
+.rqd{
+    /* border: 1px solid black; */
+    width: 98%;
+    margin: 10px auto;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+}
+.product-review,
+.product-qna,
+.product-delivery{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: white;
+}
+.pr,
+.pq,
+.pd{
+    width: 100%;
+    /* border: 1px solid black; */
+    padding: 10px;
+    margin: 10px 0;
+}
+.pr div{
+    width: 100%;
+    /* border: 1px solid black; */
+    padding: 20px;
+}
+.pq{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.pq-name{
+    width: 30%;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.pq-title{
+    width: 70%;
+    border: 1px solid black;
+    margin-left: -1px;
+    font-size: 0.8rem;
+}
+.pq-name p,
+.pq-title p{
+    margin-bottom: 1px;
+    border-bottom: 1px solid black;
+}
+.event-banner{
+    width: 100%;
+    margin: 10px auto;
+}
+.event-banner img{
+    width: 100%;
+
+}
+@media screen and (min-width:1024px){
+    .product{
+        width: 70%;
+        margin: 40px auto;
+    }
+    .p-img,
+    .p-info{
+        padding: 15px;
+        margin: 40px;
+    }
+    .p-info h3{
+        font-size: 1.7rem;
+    }
+    .p-info p{
+        font-size: 1.1rem;
+    }
+    .p-info p span{
+        font-size: 1.4rem;
+    }
+    .size{
+        margin-top: 60px;
+    }
+    .count{
+        margin-bottom: 60px;
+    }
+    .p-page{
+        width: 50%;
+        margin: auto;
+        /* border: 1px solid black; */
+    }
+    .p-page img{
+        width: 100%;
+    }
+}
