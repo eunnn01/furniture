@@ -12,12 +12,12 @@ section{
     position: relative;
 }
 a{
-    color: black;
+    color: rgb(51, 45, 34);
     text-decoration: none;
 }
 
 a:hover{
-    color: black;
+    color: rgb(189, 179, 160);
     
 }
 
@@ -359,18 +359,76 @@ header.active{
 }
 .main-inte-design{
     width: 100%;
-    border: 1px solid black;
+    max-width: 1200px;
+    margin: auto;
+    /* border: 1px solid black; */
 }
 .main-inte,
 .main-design{
-    
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    width: 85%;
+    margin: auto;
 }
+.main-design h2{
+    text-align: right;
+}
+.main-inte-design h2{
+    font-size: 2rem;
+    margin: 30px 10px;    
+}
+.main-inte-slider,
+.main-design-slider{
+    width: 100%;
+    height: 177.52px;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+
+.main-inte-slides,
+.main-design-slides{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* border: 1px solid black; */
+}
+.main-inte-design button{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top:50%;
+    transform: translate(0,-50%);
+    right:10px;
+    font-size: 2rem;
+    border: none;
+    color: rgb(138, 119, 92);
+    background-color: white;
+}
+.main-inte-slide,
+.main-design-slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    /* border: 1px solid black; */
+}
+.main-inte-slide img,
+.main-design-slide img{
+    width: 100%;
+}
+
+.inteprevbt,
+.deprevbt{
+    right: inherit;
+    left: 10px;
+}
+
+
 .example{
     width:93%;
     margin: 50px auto;
     background-color: rgba(104, 89, 62, 0.5);
-    /* border: 1px solid black; */
+    border: 1px solid black;
     border-radius: 15px;
     padding: 20px;
 }
@@ -388,13 +446,6 @@ header.active{
 .ex-content{
     width:100%;
     display:none;
-}
-.ex-content p{
-    width: 100%;
-    border-bottom: 4px double rgb(104, 89, 62);
-    font-size: 0.85rem;
-    font-weight: 600;
-    padding: 10px 0;
 }
 .ex-content:first-child{
     display: block;
@@ -429,6 +480,22 @@ header.active{
     font-size: 1.5rem;
     border-radius: 10px;
 }
+.e-content-text{
+    margin-top: 10px;
+    width: 100%;
+}
+.e-content-text a{    
+    border-bottom: 4px double rgb(104, 89, 62);
+    padding-bottom: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.e-content-text a span{
+    font-size: 0.8rem;
+}
 .ex-box-group{
     display: flex;
 }
@@ -443,6 +510,50 @@ header.active{
     width: 100%;
     height: 100%; 
 }
+.inte-design-box-wrap{
+    /* border:1px solid black; */
+    width: 100%;
+    overflow: auto;
+}
+.inte-design-box{
+    width: 300%;
+    /* border:1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.inte-design-box h3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+.inte-design-box h3 span{
+    font-size: 1rem;
+    /* border: 1px solid black; */
+}
+.inte-design-box p{
+}
+.inte-design-box a{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.main-off-store,
+.main-online,
+.main-inde-more{
+    width: 50%;
+    border:2px solid rgb(136, 126, 109);
+    background-color: rgb(216, 207, 192);
+    padding: 30px;
+    margin: 20px;
+}
+.main-inde-more a{
+    margin-top: 17px;
+}
 .com-group{
     /* border:1px solid black; */
     width: 100%;  
@@ -452,19 +563,20 @@ header.active{
 .com2{
     margin: 20px auto;
     width:83%;
-    border: 2px solid rgb(0, 36, 0);
+    border: 2px solid rgb(82, 71, 52);
     padding: 10px;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.5);
 }
 .com1 h3{
     font-size: 1.3rem;
+    color: rgb(39, 35, 29);
 }
 .com1 ul{
     list-style-type: none; 
 }
 .com1 ul li{
     padding:10px;
-    border-bottom: 1px dashed black;
+    border-bottom: 1px dashed rgb(82, 71, 52);
 }
 .com1 ul li:last-child{
     border:none;
@@ -473,6 +585,10 @@ header.active{
     font-size: 0.9rem;
     display: flex;
     justify-content: space-between;
+    color: rgb(75, 66, 48);
+}
+.com1 ul li a:hover{
+    color: rgb(163, 154, 134);
 }
 .com2{
     display: flex;
@@ -483,6 +599,7 @@ header.active{
     font-weight: 600;
     padding: 5px;
 }
+/* 모바일 사이드 네비 */
 .m-side-nav{
     width: 100%;
     height: 11%;
@@ -495,8 +612,35 @@ header.active{
 }
 .side-box{
     width: 20%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    padding: 10px;
 }
+.side-box a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.side-box p{
+    width: 100%;
+    font-size: 0.75em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+    color: black;
+    /* border: 1px solid black;  */
+}
+.m-side{
+    width: 70%;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+.m-side img{
+    width: 100%;
+}
+
+/* 데스크 사이드 네비 */
 .d-side-nav{
     display: none;
 }
@@ -510,16 +654,17 @@ header.active{
     height:55px;
     position: fixed;
     z-index:2;
-    top:80%;
+    top: 73%;
     right:10px;
 }
 /* 푸터 */
 footer{
     width: 100%;
     height:auto;
-    background-color: rgb(228, 215, 188);
-    /* color:white; */
+    background-color: rgb(104, 89, 62);
+    color:white;
     padding: 30px;
+    padding-bottom: 100px;
 }
 
 .f-call,
@@ -788,6 +933,7 @@ footer{
         right: inherit;
         left: 30px;
     }
+    /* 스토어 */
     .main-thumtitle{
         font-size: 3rem;
         margin-left: 50px;
@@ -817,6 +963,31 @@ footer{
     .thum-text span{
         font-size: 1.5rem;
     }
+    /* 인테리어, 홈디자인 */
+    .main-inte,
+    .main-design{
+        width: 100%;
+    }
+    .main-inte h2,
+    .main-design h2{
+        font-size: 3rem;
+        margin: 100px 30px;
+    }
+    .main-inte-slider,
+    .main-design-slider{
+        width: 100%;
+        height: 671.31px;
+        margin: auto;
+        /* border: 1px solid black; */
+    }
+    
+    .main-inte-design button{
+        width: 60px;
+        height: 60px;
+        font-size: 3rem;
+        right:30px;
+    }
+    /* 예시 탭 */
     .example{
         margin:140px auto;
         width:50%;
@@ -829,9 +1000,29 @@ footer{
     .ex-content{
         margin: 30px auto; 
     }
-    .ex-content p{
+    .e-content-text{
+        width: 100%;
+    }
+    .e-content-text a{
         font-size: 1.4rem;
-        width: 70%;
+        width: 100%;     
+        /* color: rgb(233, 222, 222); */
+    }
+    .e-content-text a span{
+        font-size: 1.1rem;
+    }
+    .inte-design-box{
+        flex-wrap: nowrap;   
+        width: 60%;  
+        margin: 50px auto; 
+    }
+    .inte-design-box h3 span{
+        display: none;
+    }
+    .main-off-store,
+    .main-online,
+    .main-inde-more{
+        width:33%; 
     }
     .community{
         display: flex;
@@ -868,19 +1059,23 @@ footer{
         display: none;
     }
     .d-side-nav{
+        width: 5%;
+        height: 280px;
         position: fixed;
         z-index: 2;
         /* border: 1px solid black; */
         top:50%;
-        right: 0;
-        /* background-color: white; */
+        transform: translate(0,-50%);
+        right: 10px;
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
     }
     .d-side{
         width: 80px;
         height: 80px;
-        /* border: 1px solid black; */
+        border: 4px double white;
         border-radius: 40px;
         overflow: hidden;
         display: flex;
@@ -891,7 +1086,8 @@ footer{
         color: white;
         padding: 10px;
         font-size: 0.8rem;
-    }
+        margin: 5px;
+        }
     .d-side button{
         width: 100%;
         border: none;

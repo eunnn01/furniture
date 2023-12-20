@@ -67,6 +67,84 @@ $(document).ready(function(){
             $(".m-open").removeClass("active");
         }
     })
+    // 인테리어 페이드 인,아웃  
+    var inteslidePosition=0;
+    var $inteslides=$(".main-inte-slides");
+    var $inteslide=$inteslides.children(".main-inte-slide");
+    var inteslideLength=$inteslide.length;
+    var $inteauto=null;
+    
+    function inteslideEvent(){
+        function intenextMove(){
+            if(inteslidePosition===inteslideLength-1){
+                inteslidePosition=0;
+            }else{
+                inteslidePosition++;
+            }
+            $inteslide.fadeOut();
+            $inteslide.eq(inteslidePosition).fadeIn();
+        }
+        $(".intenextbt").click(function(){
+            intenextMove();
+        });
+        function inteprevMove(){
+            if(inteslidePosition===0){
+                inteslidePosition=inteslideLength-1;
+            }else{
+                inteslidePosition--;
+            }
+            inteslideMove();
+        }
+        $(".inteprevbt").click(function(){
+            inteprevMove();
+        });
+        function inteautoMove(){
+            $inteauto=setInterval(function(){
+                intenextMove();
+            },5000)
+        }
+        inteautoMove();
+    }
+    inteslideEvent();
+    // 홈디자인 페이드 인,아웃
+    var deslidePosition=0;
+    var $deslides=$(".main-design-slides");
+    var $deslide=$deslides.children(".main-design-slide");
+    var deslideLength=$deslide.length;
+    var $deauto=null;
+    function deslideEvent(){
+        function denextMove(){
+            if(deslidePosition===deslideLength-1){
+                deslidePosition=0;
+            }else{
+                deslidePosition++;
+            }
+            $deslide.fadeOut();
+            $deslide.eq(deslidePosition).fadeIn();
+        }
+        $(".denextbt").click(function(){
+            denextMove();
+        });
+        function deprevMove(){
+            if(deslidePosition===0){
+                deslidePosition=deslideLength-1;
+            }else{
+                deslidePosition--;
+            }
+            deslideMove();
+        }
+        $(".deprevbt").click(function(){
+            deprevMove();
+        });
+        function deautoMove(){
+            $deauto=setInterval(function(){
+                denextMove();
+            },5000)
+        }
+        deautoMove();
+    }
+    deslideEvent()
+    
     // 추천사례 탭
     $(".ex-content").eq(0).show();
     $(".ex-box a").click(function(){
@@ -75,10 +153,10 @@ $(document).ready(function(){
         $(".ex-box a").removeClass("active");
         $(this).addClass("active");
     })
-    $(".ex-content").hover(function(){
+    $(".e-content").hover(function(){
         $(this).find(".e-content-box").css({display:"flex"});
     })
-    $(".ex-content").mouseleave(function(){
+    $(".e-content").mouseleave(function(){
         $(".e-content-box").css({display:"none"});
     })
     // 사이드 네비 (위로)
@@ -101,7 +179,6 @@ $(document).ready(function(){
                 left:-mslideWidth*slidePosition
             })
         }
-        
         function nextMove(){
             if(slidePosition==slideLength-8){
                 slidePosition=0;
