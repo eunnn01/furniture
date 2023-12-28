@@ -152,6 +152,7 @@ $(document).ready(function(){
     
     // 추천사례 탭
     $(".ex-content").eq(0).show();
+    $(".ex-box a").eq(0).addClass("active");
     $(".ex-box a").click(function(){
         $(".ex-content").hide();
         $(this.hash).show();
