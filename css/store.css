@@ -71,6 +71,7 @@
 .category-box{
     width: 330%;
     display: flex;
+    flex-wrap: nowrap;
 }
 .category{
     width: 30%;
@@ -99,6 +100,11 @@
     padding: 5px 0;
     font-weight: 700;
     /* border: 1px solid black; */
+    cursor: pointer;
+}
+.category p.active{
+    background-color: rgb(124, 113, 91);
+    color: white;
 }
 .store-product-wrap{
     /* border: 1px solid black; */
@@ -163,13 +169,19 @@
     .category-box-wrap{
         padding: 25px;
         margin: 80px auto;
+        /* border: 1px solid black; */
     }
     .category-box{
-        width: 121%;
+        width:80%;
+        flex-wrap: wrap;
+        margin: auto;
+        /* border: 1px solid black; */
     }
     .category{
-        width: 11%;
+        width: 14%;
         margin: 5px 10px;
+        /* border: 1px solid black; */
+        
     }
     .store-product-wrap{
         width: 100%;

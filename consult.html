@@ -13,14 +13,13 @@
         <meta property="og:url" content="http://ej5761.dothome.co.kr/furniture-p">
         <title>furniture-p</title>
         <link rel="shortcut icon" href="./images/favicon-1.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
         <link rel="stylesheet" href="./css/common.css">
-        <link rel="stylesheet" href="./css/member.css">
+        <link rel="stylesheet" href="./css/consult.css">
         <script src="./js/jquery-3.7.1.min.js"></script>
         <script src="./js/common.js"></script>
-        <script src="./js/member.js"></script>
         <style>
-
+            
         </style>
         <script>
 
@@ -83,7 +82,7 @@
                                     <a href="#">공지사항</a>
                                     <a href="#">자주묻는 질문</a>
                                     <a href="#">묻고 답하기</a>
-                                    <a href="consult.html">온라인상담 신청</a>
+                                    <a href="#">온라인상담 신청</a>
                                     <a href="#">가맹안내</a>
                                 </div>
                             </div>
@@ -96,8 +95,7 @@
                             <div class="full-back">
                                 &nbsp;
                             </div>                  
-                        </div>
-                         
+                        </div>                       
                     </nav>       
                     <nav class="mobile-nav">  
                         <button class="fa fa-bars m-open"></button> 
@@ -126,7 +124,7 @@
                                             <a href="#">공지사항</a>
                                             <a href="#">자주묻는 질문</a>
                                             <a href="#">묻고답하기</a>
-                                            <a href="consult.html">온라인상담</a>
+                                            <a href="#">온라인상담</a>
                                             <a href="#">가맹안내</a>
                                         </div>
                                     </div>
@@ -145,46 +143,29 @@
                                 </div>
                             </div>
                         </div>
-                    </nav>   
-                </header>   
+                    </nav>  
+                </header>
             </div>
             <section>
                 <div class="section-container">
-                    <h2 class="member-title">회원가입</h2>
-                    <form class="member-form">
-                        <div class="id">
-                            <input type="text" name="id-form" minlength="6" maxlength="12" placeholder="아이디(필수)" >
-                        </div>
-                        <p class="text-limit">영문자,숫자,특수문자(@,$,% 제외) 6자 이상 12자 이내</p>
-                        <div class="psw">
-                            <input type="password" name="psw1" minlength="8" maxlength="16" placeholder="비밀번호(필수)" >
-                        </div>
-                        <p class="text-limit">영문자,숫자,특수문자(@,$,% 제외) 8자 이상 16자 이내</p>
-                        <div class="psw">
-                            <input type="password" name="psw2" minlength="8" maxlength="16" placeholder="비밀번호 확인" >
-                        </div>
+                    <h2> 인테리어 / 홈디자인 상담</h2>
+                    <p> 전체 인테리어 공사부터<br>부엌, 욕실, 건자재 등 부분(단품)인테리어까지<br>홈디자인과 인테리어의 모든 것을 퍼니쳐와 상담하세요.</p>
+                    <form class="consult-form">
+                        <p class="cfp">이름</p>
                         <div class="name">
-                            <input type="text" name="name" minlength="2" maxlength="6" placeholder="이름(필수)">
+                            <input type="text" name="name" minlength="2" maxlength="6" placeholder="이름 입력">
                         </div>
-                        <div class="jender">
-                            <input type="radio" name="jender" id="male" value="male"> <label>남성</label><br>
-                            <input type="radio" name="jender" id="female" value="female"> <label>여성</label>
-                        </div>
-                        <div class="email">
-                            <input type="text" name="e-id" placeholder="이메일 아이디">
-                            <span>@</span>
-                            <input type="text" name="e-add">
-                            <select class="e-select">
-                                <option value="naver.com">네이버</option>
-                                <option value="daum.net">다음</option>
-                                <option value="gmail.com">지메일</option>
-                                <option value="" selected>직접입력</option>
-                            </select>
-                        </div>
+                        <p class="cfp">휴대폰번호</p>
                         <div class="phone">
                             <input type="text" name="num1" value="010" disabled>-
                             <input type="text" name="num2">-
                             <input type="text" name="num3">
+                        </div>
+                        <p class="cfp">시공주소</p>
+                        <div class="address">
+                            <input type="text" name="zipcode" placeholder="우편번호">
+                            <input type="text" name="address1" placeholder="주소입력">
+                            <input type="text" name="address2" placeholder="상세주소">
                         </div>
                         <div class="check-box">
                             <p class="chk-ele">
@@ -193,17 +174,18 @@
                             </p>
                             <p class="chk-ele">
                                 <input type="checkbox" name="chk1" id="chk1">
-                                <label for="chk1"></label> 개인정보 제3자 제공 동의[선택]
+                                <label for="chk1"></label> 개인정보 수집 및 이용동의[필수]
                             </p>
                             <p class="chk-ele">
                                 <input type="checkbox" name="chk2" id="chk2">
-                                <label for="chk2"></label> 상품 정보 및 혜택 수신 동의[선택]
+                                <label for="chk2"></label> 개인정보 제3자 제공 동의[필수]
                             </p>
                         </div>
                         <div class="trans">
-                            <input type="submit" value="회원가입">
+                            <input type="submit" value="상담신청">
                         </div>
                     </form>
+                    
                 </div>
                 <div class="side-nav">
                     <nav class="m-side-nav">
@@ -275,7 +257,7 @@
                         </div> 
                     </nav>
                     <button class="fa fa-angle-double-up"></button>
-                </div>
+                </div>  
             </section>
             <footer>
                 <div class="f-group">
@@ -308,6 +290,5 @@
                 </div>
             </footer>
         </main>
-        
     </body>
 </html>

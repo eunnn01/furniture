@@ -1,0 +1,118 @@
+@charset "utf-8";
+.section-container{
+    padding-top:140px;
+    padding-bottom: 50px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.section-container h2{
+    text-align: center;
+    font-size: 1.9rem;
+    margin: 10px 0;
+}
+.section-container>p{
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.consult-form{
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    background-color: rgb(238, 223, 209);
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+.cfp{
+    margin: 2px 0;
+}
+.name{
+    width: 96%;
+    height: 50px;
+    margin: auto;
+}
+.phone{
+    width: 96%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.address{
+    margin: auto;
+    width: 96%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+}
+input[name=name]{
+    width: 100%;
+    height: 80%;
+}
+
+input[name=num1],
+input[name=num2],
+input[name=num3]{
+    width: 32%;
+    height: 80%;
+}
+input[name=zipcode],
+input[name=address1],
+input[name=address2]{
+    height: 33%;
+}
+input[type=text]{
+    margin: 5px 0;
+}
+.check-box{
+    padding: 10px;
+    /* border: 1px solid black; */
+}
+input[type=checkbox]{
+    margin: 3px;
+}
+.chk-ele{
+    font-size: 0.9rem;
+    margin: 2px 0;
+}
+.trans{
+    height: 40px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+input[type=submit]{
+    border: none;
+    width:70%;
+    height:100%;
+    background-color:rgb(124, 113, 91);
+    color:white;
+}
+@media screen and (min-width:1024px){
+    .section-container h2{
+        font-size: 2.7rem;
+        margin-top: 180px;
+        margin-bottom: 30px;
+    }
+    .section-container>p{
+        font-size: 1.1rem;
+        margin-bottom: 80px;
+    }
+    .consult-form{
+        width: 60%;
+        padding: 30px;
+    }
+    .cfp{
+        font-size: 1.1rem;
+        margin: 4px 0;
+    }
+    .chk-ele{
+        font-size: 1rem;
+        margin: 4px 0;
+    }
+}

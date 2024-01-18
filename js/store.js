@@ -10,6 +10,8 @@ $(function(){
         console.log("searchArray["+i+"]"+searchArray[i])
     }    
     $(".category").click(function(){
+        $(".category p").removeClass("active");
+        $(this).find("p").addClass("active");
         searchCategory=$(this).children("p").text();
         console.log("searchCategory :"+searchCategory);
         for(i=0; i<$(".store-product-box").length; i++){
